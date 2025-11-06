@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="Seon Kwon Kim" content="">
+		<meta name="Seon Kwon Kim" content="">
+
+		<title>Seon Kwon Kim</title>
+		<link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+		<link href="css/icon.css" rel="stylesheet">
+		<link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script type="text/javascript">
+		function visibility_on(id) {
+			var e = document.getElementById(id+"_text");
+			if(e.style.display == 'none')
+			e.style.display = 'block';
+			var e = document.getElementById(id+"_img");
+			if(e.style.display == 'none')
+			e.style.display = 'block';
+		}
+		function visibility_off(id) {
+			var e = document.getElementById(id+"_text");
+			if(e.style.display == 'block')
+			e.style.display = 'none';
+			var e = document.getElementById(id+"_img");
+			if(e.style.display == 'block')
+			e.style.display = 'none';
+		}
+		function toggle_visibility(id) {
+			var e = document.getElementById(id+"_text");
+			if(e.style.display == 'inline')
+			e.style.display = 'block';
+			else
+			e.style.display = 'inline';
+			var e = document.getElementById(id+"_img");
+			if(e.style.display == 'inline')
+			e.style.display = 'block';
+			else
+			e.style.display = 'inline';
+		}
+		function toggle_vis(id) {
+			var e = document.getElementById(id);
+			if (e.style.display == 'none')
+			e.style.display = 'inline';
+			else
+			e.style.display = 'none';
+		}
+		</script>
+		<style>
+			.collapsible2 {
+    				padding-bottom: 0px;
+    				padding-top: 0px;
+				background-color: #777;
+				color: white;
+				padding: 18px;
+				width: 100%;
+				border: none;
+				text-align: left;
+				outline: none;
+				font-size: 15px;
+			}
+			.collapsible {
+				background-color: #777;
+				color: white;
+				cursor: pointer;
+				padding: 18px;
+				width: 100%;
+				border: none;
+				text-align: left;
+				outline: none;
+				font-size: 15px;
+			}
+
+			.active, .collapsible:hover {
+			  	background-color: #555;
+			}
+
+			.collapsible:after {
+				content: '\002B';
+				color: white;
+				font-weight: bold;
+				float: right;
+				margin-left: 5px;
+			}
+
+			.active:after {
+			  	content: "\2212";
+			}
+
+			.content {
+				padding: 0 18px;
+				max-height: 0;
+				overflow: hidden;
+				transition: max-height 0.2s ease-out;
+				background-color: #f1f1f1;
+			}
+
+			.column {
+			  float: left;
+			  width: 50%;
+			  padding: 10px;
+			}
+
+			.row:after {
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			@media screen and (max-width: 900px) {
+			  .column  {
+			    width: 50%;
+			  }
+			}
+
+			@media screen and (max-width: 600px) {
+			  .column  {
+			    width: 100%;
+			  }
+			}
+
+		</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top">
+	      		<div class="container">
+	        		<div class="navbar-header">
+	          			<a class="navbar-brand" href="#">Seon Kwon Kim</a>
+	        		</div>
+	        		<div id="navbar" class="navbar-collapse collapse">
+	          			<ul class="nav navbar-nav">
+				            <li><a href="#">Home</a></li>
+				            <li><a href="#prj-wrk">Project & Work Experience</a></li>
+				            <li><a href="#rsrc">Research</a></li>
+					    <li><a href="#vltr">Volunteer Experience</a></li>
+	          			</ul>
+	        		</div>
+	      		</div>
+	    	</nav>
+	    	<div class="container theme-showcase" role="main">
+	      		<div class="row">
+				<div class="col-md-3">
+				  	<h3>Seon Kwon Kim</h3>
+				  	<img class="img-thumbnail" src="image/skkim.jpeg" alt="" style="width:70%"/>
+				  	<br /><br />
+				  	<h4>Contact</h4>
+					<font size="3"><a href="mailto:godmakessky@gmail.com" class="icon fa-envelope"></a> godmakessky@gmail.com<br />
+					<font size="3"><a href="mailto:godmakessky@gmail.com" class="icon fa-phone"></a> +82-10-3151-6243<br />
+				</div>
+				<div class="col-md-9">
+			  		<br /><br />
+			  		<h3></h3>
+			  		<font size="3">
+					<p style="line-height: 200%;">
+						I received the B.S. degree in computer science and electronics engineering from Handong Global University, Pohang, South Korea, and the M.S. degree in cyber security from Korea University, Seoul, Korea.
+						I am currently pursuing a Ph.D. program at the Graduate School of Information Security, KAIST, Daejeon, South Korea.
+						My research interests include <font color="#cc0000">Federated Learning, XAI, and AI Security</font>.
+					</p>
+					<blockquote style=" padding: 10px; background-color: #eeeeee;">
+						<font size="3">
+				         		<p style="line-height: 200%;">
+								I am interested in the intersection of security and artificial intelligence, focusing on developing defense techniques for attacks on software and networks.
+								My research focuses on the synergy between deep learning models and multivariate data, including side-channel information, to enhance defense mechanisms against diverse attacks in various environment.
+								Furthermore, I am eager to solve security problems through privacy-aware programming.
+								In detail, I aim to develop human-centered security solutions.
+								I want to explore how the design of dialogue tutors can enhance the qualities of privacy-aware programming.
+								I anticipate that utilizing natural language processing (NLP) for privacy-aware programming can create interactive learning experiences and customized learning materials.
+							</p>
+						</font>
+					</blockquote>
+					<!-- <p>
+						For more details about me and my research, here is my
+						<a href="./research/CV_skKim.pdf">CV</a>.
+					</p> -->
+				</div>
+			</div>
+
+			<div class="page-header" id="prj-wrk">
+				<h3>Project Experience</h3>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<font size="3">
+						<button class="collapsible">
+							<date>2021</date> - <date>2023</date>
+							&nbsp;&nbsp;Development of Source Code Obfuscatioin and Deobfuscation Technologies
+						</button>
+						<div class="content">
+ 							<div class="row">
+								<div class="column" style="padding-left: 77px;">
+									<p>
+										This project was commissioned by the Agency for Defense Development.
+										I participated in the project as a researcher in the Embedded Security Lab.
+										The project aimed to prevent the forgery of programs and the exposure of algorithms and data utilized by programs and applications in the South Korean military.
+										During the project, I:
+									</p>
+									<ol>
+										<li>
+											Researched a new data obfuscation method based on mixed boolean-arithmetic.
+										</li>
+										<li>
+											Designed a novel control flow obfuscation method using dummy statements and our new data obfuscation method.
+										</li>
+										<li>
+											Investigated metrics to measure the strength of obfuscation.
+										</li>
+									</ol>
+								</div>
+								<div class="column">
+									<img class="img-thumbnail" src="image/prj1-1.png" alt="" style="width:100%"/>
+								</div>
+							</div>
+						</div>
+						<button class="collapsible">
+							<date>2021</date> - <date>2023</date>
+							&nbsp;&nbsp;Development of Security Service Technology using Side-channel Information
+						</button>
+						<div class="content">
+							<div class="row">
+								<div class="column" style="padding-left: 77px;">
+									<p>
+										This project was commissioned by the National Research Foundation of Korea.
+										I participated in the project as a researcher in the Embedded Security Lab, developing security solutions that utilized side-channel information from the PHY-level.
+										The project aimed to detect, defend against, and respond to attacks on cyber-physical systems, including smartwatches, car smart keys, and PC systems.<br>
+										Throughout the project, I concentrated on developing a defense technique against control-flow attacks for PC systems (Linux, Windows).
+										This involved incorporating both anomaly detection using deep learning and system information as a combination of hardware performance counter data in the hardware layer and system utilization data in the kernel layer.
+									</p>
+								</div>
+								<div class="column">
+									<img class="img-thumbnail" src="image/prj2-1.PNG" alt="" style="width:100%"/>
+								</div>
+							</div>
+						</div>
+						<button class="collapsible">
+							<date>2021</date> - <date>2022</date>
+							&nbsp;&nbsp;Development of Technology for the Security & Ultra-high-speed Integrity of the Next-generation Internal Network of Autonomous Vehicles
+						</button>
+						<div class="content">
+							<div class="row">
+								<div class="column" style="padding-left: 77px;">
+									<p>
+										This project was commissioned by the Institute for Information & communication Technology Planning & evaluation.
+										I participated in the project as a researcher in the Embedded Security Lab.
+										The project aimed to create a new way to detect and respond to issues in autonomous vehicle networks using artificial intelligence.
+										During the project, I:
+									</p>
+									<ol>
+										<li>
+											Researched security threats and hacking, including attack scenarios and attack vectors targeting the in-vehicle network of autonomous vehicles.
+										</li>
+										<li>
+											Researched AI-based prediction and analysis techniques for security threats against the in-vehicle network.
+										</li>
+									</ol>
+								</div>
+								<div class="column">
+									<img class="img-thumbnail" src="image/prj3-1.png" alt="" style="width:100%"/>
+								</div>
+							</div>
+						</div>
+						<button class="collapsible">
+							<date>2021</date>
+							&nbsp;&nbsp;KU-Smart Mask Project
+						</button>
+						<div class="content">
+							<div class="row">
+								<div class="column" style="padding-left: 77px;">
+									<p style="line-height: 200%;">
+										KU-Smart Mask was designed to recognize one's own bad breath through a simple interface between a mask sensor and a smartphone.
+										Our team developed KU-Smart Mask, incorporating an Arduino and a cross-platform mobile application for sensing and analyzing human breath.
+										The primary goal was to eliminate the unpleasant experience of bad breath in face-to-face situations where the mask is removed.
+									</p>
+								</div>
+								<div class="column">
+									<div class="row">
+										<div class="column">
+											<img class="img-thumbnail" src="image/prj4-1.png" alt="" style="width: 77%;float:right;">
+										</div>
+										<div class="column">
+											<iframe width="100%" src="https://youtube.com/embed/a1v42aK368g"></iframe>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button class="collapsible">
+							<date>2020</date>
+							&nbsp;&nbsp;A Grocery Purchasing System Using RFID Technology for Blind People
+						</button>
+						<div class="content">
+							<div class="row">
+								<div class="column" style="padding-left: 77px;">
+									<p>
+										This project was conducted as a Post-Capstone Research course.
+										The project aimed to design a cross-platform mobile application to assist visually impaired individuals in their shopping activities by providing audio guidance about groceries' information.<br>
+										The application primarily incorporates both NFC tagging and voice recognition (text-to-speech & speech-to-text) techniques.
+										When the application's users buy their groceries, they can use its functions by using their voice.
+										They simply pick up a product, tag it with their phones, and listen to its information such as name, price, duration, and ingredients.
+									</p>
+								</div>
+								<div class="column">
+									<img class="img-thumbnail" src="image/prj5-1.gif" alt="" style="width:25%;display:block;margin-left:auto;margin-right:auto;"/>
+								</div>
+							</div>
+						</div>
+						<button class="collapsible">
+							<date>2019</date>
+							&nbsp;&nbsp;Industry and Academy Research Cooperation Project: A dynamic web solution based on GUI
+						</button>
+						<div class="content">
+							<div class="row">
+								<div class="column" style="padding-left: 77px;">
+									<p style="line-height: 200%;">
+										This project was commissioned by Doreiku Co.
+										Our team utilized various web development tools based on Java Enterprise Edition 8.
+										The objective was to enable users without programming knowledge to develop web pages that seamlessly integrate both back-end and front-end functionalities.
+										The web page design involves all functions operating based on a graphical user interface (GUI), allowing users to create web pages through a drag-and-drop interface for web components.
+									</p>
+								</div>
+								<div class="column">
+									<iframe width="100%"style="height: 255px;" src="https://www.youtube.com/embed/Yxji1_ge29Q"></iframe>
+								</div>
+							</div>
+						</div>
+						<div class="collapsible2" style="padding-bottom: 1px;padding-top: 1px;">
+							<date>2019</date>
+							&nbsp;&nbsp;Industry and Academy Capstone Design Project: A enterprise web solution
+							<ul style="padding-left: 17%;">
+								<li>
+									Team Lead for a 2-member team with a professor advisor and a company president, to develop a web-based international track and field tournament system.
+								</li>
+								<li>
+									Utilized Java EE 8 and responded to multi-view and internationalization dynamically.
+								</li>
+							</ul>
+						</div>
+						<div class="collapsible2" style="padding-bottom: 1px;padding-top: 1px;">
+							<date>2018</date>
+							&nbsp;&nbsp;FPGA Design Project: A shooting game with various I/O devices
+							<ul style="padding-left: 17%;">
+								<li>
+									Used Nexys DDR 4 board by Verilog with a computer monitor, a speaker and a PS2 Keyboard to play the game.
+								</li>
+							</ul>
+						</div>
+						<div class="collapsible2" style="padding-bottom: 1px;padding-top: 1px;">
+							<date>2017</date>
+							&nbsp;&nbsp;Arduino Design Project: A device to show on a screen display about seats in a library
+							<ul style="padding-left: 17%;">
+								<li>
+									Used Arduino by Sketch with PIR sensors and servomotors to detect whether people sit in a library chair or not.
+								</li>
+							</ul>
+						</div>
+						<div class="collapsible2" style="padding-bottom: 1px;padding-top: 1px;">
+							<date>2017</date>
+							&nbsp;&nbsp;Business Design Project for an IT Start-up in China
+							<ul style="padding-left: 17%;">
+								<li>
+									Team Lead for a 5-member team who developed a business project for an IT start-up business in China.
+								</li>
+								<li>
+									Won 1st Place in the contest hosted by Cheil Pengtai Corporation.
+								</li>
+								<li>
+									Utilized Oven, an online prototyping tool.
+								</li>
+							</ul>
+						</div>
+						<div class="collapsible2" style="padding-bottom: 1px;padding-top: 1px;">
+							<date>2017</date>
+							&nbsp;&nbsp;Product Design Project: A bus application Using Voice Recognition Technology for Blind People
+							<ul style="padding-left: 17%;">
+								<li>
+									Part of a 3-member team with a professor advisor, to develop a product to address the needs of Pohang city residents who are blind.
+								</li>
+								<li>
+									Utilized Android by Java and researched GPI technology and Open API as a programmer.
+								</li>
+							</ul>
+						</div>
+					</font>
+				</div>
+			</div>
+			<div class="page-header">
+				<h3>Work Experience</h3>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<font size="3">
+						<ul>
+							<li>
+								<date>2023</date>
+								&nbsp;&nbsp;Camp Instructor,
+								<a href="https://gifted.korea.ac.kr/gifted/index.do">
+									Korea University Center for Gifted Education
+								</a>
+
+							</li>
+							<li>
+								<date>2021</date> - <date>2022</date>
+								&nbsp;&nbsp;Resident Assistant,
+								<a href="https://dorm.korea.ac.kr/front/main?lang=en">
+									Korea University Anam Dormitory
+								</a>
+							</li>
+							<li>
+								<date>2021</date> - <date>2023</date>
+								&nbsp;&nbsp;Teaching Assistant,
+								<a href="https://kuids.korea.ac.kr/kuids/index.do">
+									Korea University Institute of Data Science
+								</a>
+							</li>
+							<li>
+								<date>2020</date> - <date>2021</date>
+								&nbsp;&nbsp;Researcher,
+								<a href="http://duduit.co.kr/main.html">
+									DUDU IT, Inc.
+								</a>
+							</li>
+							<li>
+								<date>2020</date>
+								&nbsp;&nbsp;Researcher,
+								<a href="http://cps.kaist.ac.kr/">
+									KAIST CPS LAB
+								</a>
+								Internship
+							</li>
+							<li>
+								<date>2019</date> - <date>2020</date>
+								&nbsp;&nbsp;Application Developer,
+								<a href="https://www.facebook.com/physiocue/">
+									Physiocue, Inc.
+								</a>
+							</li>
+							<li>
+								<date>2019</date>
+								&nbsp;&nbsp;Researcher,
+								<a href="https://se.kaist.ac.kr/selab/">
+									KAIST SE LAB
+								</a>
+								Internship
+							</li>
+							<li>
+								<date>2018</date> - <date>2019</date>
+								&nbsp;&nbsp;Web Developer,
+								<a href="https://www.doreiku.com/">
+									Doreiku Co.
+								</a>
+							</li>
+							<li>
+								<date>2017</date> - <date>2018</date>
+								&nbsp;&nbsp;Application Developer,
+								<a href="https://peoplespace.us/">
+									Peoplespace
+								</a>
+								Internship
+							</li>
+						</ul>
+					</font>
+				</div>
+			</div>
+			<div class="page-header" id="rsrc">
+				<h3>Research</h3>
+			</div>
+			<h4>Publications</h4>
+			<font size="3">
+				<div class="row">
+					<div class="col-md-12">
+						<button class="collapsible" style="padding-top: 18px;padding-bottom: 2px;">
+<!-- 							<hr style="margin-top: 7px;margin-bottom: 7px;"> -->
+							DROPSYS: Detection of ROP Attacks Using System Information<br />
+						 	Seon Kwon Kim, Hongjoo Jin, Kyungho Joo, Jiwon Lee, Dong Hoon Lee<br />
+							Accepted for publication in the journal 'Computers & Security', dated March 8, 2024.<br />
+							<a href="https://authors.elsevier.com/c/1inF8c43v4Nfx" class="btn btn-xs btn-default">pdf</a>
+						</button>
+						<div class="content">
+							<p>
+								Abstract: As modern return-oriented programming (ROP) attacks have become more sophisticated, preventing or detecting these attacks is essential for real-world exploit defense.
+								As an alternative to many defense techniques of ROP attacks that require software modification and hardware assistance, researchers have proposed ROP defense techniques using hardware performance counters (HPCs) to mitigate concerns about additional cost and compatibility issues.
+								However the existing HPC data-based ROP detection techniques typically suffer from low detection performance mainly because of the non-deterministic nature of HPCs.
+								To address these issues, we propose DROPSYS, an enhanced detection of ROP attacks using system information.
+								DROPSYS is based on the detection of the abnormal change of system information that takes place during ROP attacks.
+								Differing from the existing techniques, DROPSYS harnesses not only HPC data, but also system utilization data to mitigate the non-deterministic nature of HPCs.
+								Using both HPCs of processors and system utilization of operating systems makes transparent operation without requiring any modifications to the protected programs.
+								DROPSYS uses a long short-term memory-based variational autoencoder to effectively analyze the multivariate time-series HPC data and system utilization data for better detection performance.
+								DROPSYS also performs feature selection for low computational overhead while maintaining the attack detection performance.
+								In our experiments with real-world ROP exploits, DROPSYS successfully detected ROP code execution in all tested programs.
+								Evaluation results show that DROPSYS effectively captures the behaviors and effects of ROP attacks and can detect the attacks with a 0.028% false positive rate.
+								The accuracy of DROPSYS is 95.3%, and its F1 score is 94.9%---a figure much higher than those of existing techniques that utilize only HPC data.
+							</p>
+						</div>
+						<button class="collapsible" style="padding-top: 2px;padding-bottom: 2px;">
+							<hr style="margin-top: 7px;margin-bottom: 7px;">
+							Data Pointer Integrity Protection Technique Using ARM Pointer Authentication<br />
+						 	Hongjoo Jin, Jiwon Lee, Seon Kwon Kim, Dong Hoon Lee<br />
+							Korea Information and Communications Society Winter Conference, 2022.<br />
+							<a href="./research/KICS22Jin.pdf" class="btn btn-xs btn-default">pdf</a>
+						</button>
+						<div class="content">
+							<p>
+								Abstract: Malicious attackers exploit memory vulnerabilities to carry out control-flow attacks, such as a ROP attack, negatively impacting the system.
+								They execute malicious code with adverse effects on the system through these control flow attacks.
+								While techniques to safeguard programs from ROP attacks have primarily focused on preserving the integrity of return addresses and function pointers, there is insufficient research on protection techniques for frequently used data pointers residing in memory.
+								This is due to the more frequent declaration and use of data pointers compared to other pointer objects, resulting in a higher cost of integrity verification.
+								In this paper, we propose a technique that utilizes the pointer authentication function provided by the ARM architecture for efficient integrity verification of pointers.
+								The hardware support functions help significantly mitigate negative performance impacts while ensuring high-security levels for data pointer protection.
+								The proposed technique operates through hardware-based keyed MAC generation and verification instructions.
+								It analyzes the declaration and usage of data pointers during the compilation process, inserts ARM PA instructions, and generates MAC values with appropriate context values.
+							</p>
+						</div>
+						<button class="collapsible" style="padding-top: 2px;padding-bottom: 2px;">
+							<hr style="margin-top: 7px;margin-bottom: 7px;">
+							A New Dynamic Control Flow Obfuscation Using Dummy Condition<br />
+						 	Jiwon Lee, Hongjoo Jin, Seon Kwon Kim, Kijoong Kim, Dong Hoon Lee<br />
+							Conference on Information Security and Cryptography Summer, 2022.<br />
+							<a href="./research/CISC22Lee.pdf" class="btn btn-xs btn-default">pdf</a>
+						</button>
+						<div class="content">
+							<p>
+								Abstract: Code obfuscation serves as a method to safeguard a program's intellectual property rights against malicious software analysis through reverse engineering.
+								Within code obfuscation, control flow obfuscation makes it challenging to analyze the program by intricately altering its control flow.
+								However, in general, the control flow of a program with obfuscated control flow is statically determined, rendering it susceptible to dynamic analysis.
+								Recently, a technique was proposed to address this issue, utilizing dynamic opaque predicate.
+								However, the technique has a limitation—once the control flow is determined through the first opaque predicate, the subsequent control flow becomes fixed.
+								This paper introduces a novel dynamic control flow obfuscation technique designed to address these limitations.
+								The strength of the proposed technique lies in the fact that its deobfuscation not only necessitates additional technology, leading to a high cost for malicious software analysis, but it can also be seamlessly integrated with existing control flow obfuscation techniques.
+							</p>
+						</div>
+						<button class="collapsible" style="padding-top: 2px;padding-bottom: 2px;">
+							<hr style="margin-top: 7px;margin-bottom: 7px;">
+							Design and Implementation of a Control-flow Attack Detection Method Using System Side Channel Information<br />
+						 	Seon Kwon Kim, Hongjoo Jin, Jiwon Lee, Dong Hoon Lee<br />
+							Conference on Information Security and Cryptography Summer, 2021.<br />
+							<a href="./research/CISC21Kim.pdf" class="btn btn-xs btn-default">pdf</a>
+						</button>
+						<div class="content">
+							<p>
+								Abstract: Recent studies on control-flow attack defense techniques aim to mitigate the analysis cost when applied to real applications.
+								Nevertheless, their defense strategies, incorporating both hardware implementations and algorithms, still prove less effective in tackling the challenges of attack analysis and cost issues in real-world industries.
+								This paper introduces a lightweight detection technique that utilizes system side-channel information, specifically the system utilization generated by running systems and processes, to address the limitations of existing defense techniques.
+								The newly implemented detection technique dynamically profiles the program's process I/O, memory, and context switch information through threading during the execution of the analyzed program.
+								In the experiment, we analyzed specific fluctuation sections and detected control-flow attacks through pattern comparison using actual system side-channel information.
+								Specifically, through approximately 1,600 profiling experiments conducted 1,000 times, we confirmed that system side-channel information exhibits a normal pattern in the control flow of a typical program but displays a distinct change pattern when a control-flow attack occurs.
+							</p>
+						</div>
+						<button class="collapsible" style="padding-top: 2px;">
+							<hr style="margin-top: 7px;margin-bottom: 7px;">
+							Design and Implementation of Exception Handler Dedicated to Backward-edge Control-flow Integrity for Security and Compatibility<br />
+						 	Hongjoo Jin, Seon Kwon Kim, Dong Hoon Lee<br />
+							Conference on Information Security and Cryptography Summer, 2021.<br />
+							<a href="./research/CISC21Jin.pdf" class="btn btn-xs btn-default">pdf</a>
+						</button>
+						<div class="content">
+							<p>
+								Abstract: Code pointer manipulation attacks, commonly used to hijack the control flow of an application, enable attackers to execute code with a detrimental impact on the system.
+								In particular, backward-edge exploits are frequently employed in real-world system hacking through ROP attacks.
+								Backward-edge protection techniques are primarily implemented through code instrumentation in the prologue and epilogue of a function block.
+								Instrumented code includes instructions to either encrypt/decrypt the return address of the function or store it in a separate memory space.
+								However, when a library function, used to handle a program's exception, is called, a mismatch between the function prologue and epilogue occurs.
+								The instrumented code fails to adjust for this mismatch, resulting in a program crash.
+								In this paper, we propose an enhanced exception handler that takes into account security, compatibility, and efficiency in the exception handling process for programs utilizing the backward-edge CFI technique.
+								In detail, we implemented a practical and efficient C/C++ exception handler compatible with backward-edge CFI.
+								We assessed compatibility and performance by applying the proposed prototype to the SPEC CPU2017 benchmark program.
+								The results of the measurements confirmed no compatibility issues and revealed a performance overhead of less than 1%.
+							</p>
+						</div>
+					</div>
+				</div>
+			</font>
+			<h4>Patents</h4>
+		      	<font size="3">
+				<ul>
+					<li>
+						<p>
+							Surveillance Method and System Applicable to a Mobile Electronic Device Based on Video Image Comparison Algorithm<br />
+							Seon Kwon Kim, Yujin Noh, Jihyun Lee<br />
+							KR10-2321480<br />
+						</p>
+					</li>
+					<li>
+						<p>
+							Device and Method For Detecting Return-oriented Programming Attacks Using System Information<br />
+							Seon Kwon Kim, Dong Hoon Lee, Hongjoo Jin, Kyungho Joo, Jiwon Lee<br />
+							KR10-2828696<br />
+						</p>
+					</li>
+					<li>
+						<p>
+							Information Leak Defense Technique Using Double Stack Isolation Technology<br />
+							Hongjoo Jin, Dong Hoon Lee, Jiwon Lee, Seon Kwon Kim<br />
+							KR2023-0021188 (Application Number)<br />
+						</p>
+					</li>
+					<li>
+						<p>
+							Exception Handler Dedicated to Instrumentation of Security Code Using Hash Table<br />
+							Hongjoo Jin, Dong Hoon Lee, Seon Kwon Kim, Jiwon Lee<br />
+							KR2022-0105952 (Application Number)<br />
+						</p>
+					</li>
+					<li>
+						<p>
+							Improved Stack Memory Protection Technique Using Random Memory Allocation<br />
+							Hongjoo Jin, Dong Hoon Lee, MoonChan Park, Jiwon Lee, Seon Kwon Kim<br />
+							KR2022-0087114 (Application Number)<br />
+						</p>
+					</li>
+					<li>
+						<p>
+							Dynamic Web Solution System<br />
+							Seon Kwon Kim, Hang Gyu Han<br />
+							Korea Copyright No.C-2019-043487<br />
+						</p>
+					</li>
+				</ul>
+			</font>
+
+			<div class="page-header" id="vltr">
+				<h3>Volunteer Experience</h3>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<font size="3">
+						<ul>
+							<li>
+								<date>2018</date>
+								&nbsp;&nbsp;Member, Handong Global University SW Education Pro Bono
+							</li>
+							<li>
+								<date>2018</date>
+								&nbsp;&nbsp;Member, Handong Global University
+								<a href="https://isel.handong.edu/">
+									ISEL S-LAB
+								</a>
+							</li>
+							<li>
+								<date>2017</date>
+								&nbsp;&nbsp;Member,
+								<a href="https://eyesup.creatorlink.net/">
+									SeeSeon Academy
+								</a>
+							</li>
+						</ul>
+					</font>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			var coll = document.getElementsByClassName("collapsible");
+			var i;
+			for (i = 0; i < coll.length; i++) {
+				coll[i].addEventListener("click", function() {
+					this.classList.toggle("active");
+					var content = this.nextElementSibling;
+					if (content.style.maxHeight){
+						content.style.maxHeight = null;
+					} else {
+						content.style.maxHeight = content.scrollHeight + "px";
+				}
+				});
+			}
+		</script>
+	    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	    	<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+	</body>
+</html>
